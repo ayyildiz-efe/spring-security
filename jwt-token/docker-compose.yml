@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql
+    restart: always
+    container_name: authdemo-db
+    environment:
+      MYSQL_ROOT_PASSWORD : root
+      MYSQL_DATABASE : authdemo-db
+      MYSQL_USER : user17
+      MYSQL_PASSWORD : root
+    ports:
+      - '3306:3306'
